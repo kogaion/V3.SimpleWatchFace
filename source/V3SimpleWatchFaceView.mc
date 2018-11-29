@@ -10,7 +10,7 @@ using Toybox.Application as App;
 
 class V3SimpleWatchFaceView extends Ui.WatchFace {
 
-    hidden var dc, radius, fgColor, bgColor, bdColor, hrColor, btColor, stColor, ihColor, imColor, isColor, hhColor, active;
+    hidden var dc, radius, fgColor, bgColor, bdColor, hrColor, btColor, stColor, flColor, ihColor, imColor, isColor, hhColor, active;
 
     function initialize() {
         WatchFace.initialize();
@@ -26,6 +26,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         hrColor = Gfx.COLOR_RED;// App.getApp().getProperty("HeartRateColor");
         btColor = Gfx.COLOR_DK_GREEN;// App.getApp().getProperty("BatteryColor");
         stColor = Gfx.COLOR_DK_BLUE;// App.getApp().getProperty("StepsColor");
+        flColor = Gfx.COLOR_PURPLE;
     }
 
     function onLayout(dc) {
@@ -100,6 +101,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         drawHeartRate();
         drawSteps();
         drawBattery();
+        drawFloors();
 
         for (var i = 0; i < 360; i += 1) {
 
@@ -159,20 +161,12 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
     }
 
     hidden function drawDate() {
+        if (active == true) {
+            return null;
+        }
         var text = Greg.info(Time.now(), Time.FORMAT_SHORT).day.format("%d");
-        var size = dc.getTextDimensions("9999", Gfx.FONT_XTINY);
-        var w = size[0] + 8;
-        var h = size[1] + 4;
 
-        dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(radius + radius / 2 - w / 2, radius - h / 2, w, h, 3);
-
-        dc.setColor(bdColor, Gfx.COLOR_TRANSPARENT);
-        dc.setPenWidth(2);
-        dc.drawRoundedRectangle(radius + radius / 2 - w / 2 - 1, radius - h / 2 - 1, w + 2, h + 2, 3);
-
-        dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(radius + radius / 2, radius, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+        drawRectangle(text, bgColor, 3);
     }
 
     hidden function drawHeartRate() {
@@ -188,19 +182,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         }
         var text = hr.format("%d");
 
-        var size = dc.getTextDimensions("9999", Gfx.FONT_XTINY);
-        var w = size[0] + 8;
-        var h = size[1] + 4;
-
-        dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(radius - w / 2, radius / 2 - h / 2, w, h, 3);
-
-        dc.setColor(bdColor, Gfx.COLOR_TRANSPARENT);
-        dc.setPenWidth(2);
-        dc.drawRoundedRectangle(radius - w / 2 - 1, radius / 2 - h / 2 - 1, w + 2, h + 2, 3);
-
-        dc.setColor(hrColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(radius, radius / 2, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+        drawRectangle(text, hrColor, 0);
     }
 
     hidden function drawSteps() {
@@ -210,19 +192,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         var steps = Mon.getInfo().steps;
         var text = ((steps == null) ? "0" : ((steps < 1000) ? steps.format("%d") : ((steps / 1000.0).format("%.1f")) + "k"));
 
-        var size = dc.getTextDimensions("9999", Gfx.FONT_XTINY);
-        var w = size[0] + 8;
-        var h = size[1] + 4;
-
-        dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(radius - w / 2, radius * 3 / 2 - h / 2, w, h, 3);
-
-        dc.setColor(bdColor, Gfx.COLOR_TRANSPARENT);
-        dc.setPenWidth(2);
-        dc.drawRoundedRectangle(radius - w / 2 - 1, radius * 3 / 2 - h / 2 - 1, w + 2, h + 2, 3);
-
-        dc.setColor(stColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(radius, radius * 3 / 2, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+        drawRectangle(text, stColor, 9);
     }
 
     hidden function drawBattery() {
@@ -230,19 +200,17 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
             return null;
         }
         var text = Sys.getSystemStats().battery.format("%d");
-        var size = dc.getTextDimensions("9999", Gfx.FONT_XTINY);
-        var w = size[0] + 8;
-        var h = size[1] + 4;
 
-        dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
-        dc.fillRoundedRectangle(radius - radius / 2 - w / 2, radius - h / 2, w, h, 3);
+        drawRectangle(text, btColor, 6);
+    }
 
-        dc.setColor(bdColor, Gfx.COLOR_TRANSPARENT);
-        dc.setPenWidth(2);
-        dc.drawRoundedRectangle(radius - radius / 2 - w / 2 - 1, radius - h / 2 - 1, w + 2, h + 2, 3);
+    hidden function drawFloors() {
+        if (active != true) {
+            return null;
+        }
+        var text = Mon.getInfo().floorsClimbed.format("%d");
 
-        dc.setColor(btColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(radius - radius / 2, radius, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+        drawRectangle(text, flColor, 3);
     }
 
     hidden function drawRectangle(text, color, position) {
@@ -251,24 +219,37 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         var w = size[0] + 8;
         var h = size[1] + 4;
 
-        dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
+        var tx = 0;
+        var ty = 0;
 
-        x = y = 0;
         if (position == 3) {
-
+            tx = radius + radius / 2;
+            ty = radius;
         } else if (position == 6) {
+            tx = radius;
+            ty = radius * 3 / 2;
         } else if (position == 9) {
+            tx = radius - radius / 2;
+            ty = radius;
+        } else if (position == 0) {
+            tx = radius;
+            ty = radius / 2;
         } else {
+            return null;
         }
 
-        dc.fillRoundedRectangle(radius - radius / 2 - w / 2, radius - h / 2, w, h, 3);
+        var x = tx - w / 2;
+        var y = ty - h / 2;
+
+        dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillRoundedRectangle(x, y, w, h, 3);
 
         dc.setColor(bdColor, Gfx.COLOR_TRANSPARENT);
         dc.setPenWidth(2);
-        dc.drawRoundedRectangle(radius - radius / 2 - w / 2 - 1, radius - h / 2 - 1, w + 2, h + 2, 3);
+        dc.drawRoundedRectangle(x - 1, y - 1, w + 2, h + 2, 3);
 
-        dc.setColor(btColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(radius - radius / 2, radius, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(color, Gfx.COLOR_TRANSPARENT);
+        dc.drawText(tx, ty, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
 
     }
 
