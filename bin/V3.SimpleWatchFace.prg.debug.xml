@@ -1,298 +1,602 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
     <pcToLineNum>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="15" pc="268435456" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="16" pc="268435460" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="17" pc="268435478" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="19" pc="268435513" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="20" pc="268435533" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="21" pc="268435553" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="22" pc="268435573" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="23" pc="268435593" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="24" pc="268435613" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="25" pc="268435633" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="26" pc="268435653" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="27" pc="268435673" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="28" pc="268435693" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="29" pc="268435713" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="4" lineNum="32" pc="268435734" symbol="onLayout"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="5" lineNum="35" pc="268435739" symbol="onPartialUpdate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="38" pc="268435744" symbol="onShow"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="39" pc="268435748" symbol="onShow"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="42" pc="268435761" symbol="onHide"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="43" pc="268435765" symbol="onHide"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="46" pc="268435778" symbol="onEnterSleep"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="47" pc="268435782" symbol="onEnterSleep"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="50" pc="268435793" symbol="onExitSleep"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="51" pc="268435797" symbol="onExitSleep"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="55" pc="268435808" symbol="onUpdate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="56" pc="268435812" symbol="onUpdate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="58" pc="268435822" symbol="onUpdate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="59" pc="268435834" symbol="onUpdate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="62" pc="268435847" symbol="drawBackground"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="63" pc="268435851" symbol="drawBackground"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="64" pc="268435889" symbol="drawBackground"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="67" pc="268435908" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="69" pc="268435912" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="70" pc="268435929" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="71" pc="268435939" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="73" pc="268435949" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="75" pc="268435967" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="76" pc="268435998" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="77" pc="268436017" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="80" pc="268436036" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="81" pc="268436053" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="82" pc="268436076" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="83" pc="268436142" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="87" pc="268436219" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="91" pc="268436242" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="92" pc="268436259" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="93" pc="268436297" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="94" pc="268436386" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="95" pc="268436465" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="96" pc="268436503" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="100" pc="268436605" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="101" pc="268436617" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="102" pc="268436629" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="103" pc="268436641" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="104" pc="268436653" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="106" pc="268436665" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="108" pc="268436683" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="109" pc="268436708" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="110" pc="268436727" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="127" pc="268436746" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="128" pc="268436760" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="129" pc="268436783" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="130" pc="268436821" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="134" pc="268436910" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="135" pc="268436954" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="136" pc="268436977" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="137" pc="268437015" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="141" pc="268437116" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="144" pc="268437151" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="145" pc="268437182" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="146" pc="268437201" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="148" pc="268437220" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="149" pc="268437243" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="150" pc="268437281" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="151" pc="268437367" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="156" pc="268437451" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="157" pc="268437474" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="158" pc="268437534" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="159" pc="268437573" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="160" pc="268437611" symbol="drawTime"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="163" pc="268437651" symbol="drawDate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="164" pc="268437655" symbol="drawDate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="165" pc="268437669" symbol="drawDate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="167" pc="268437674" symbol="drawDate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="169" pc="268437742" symbol="drawDate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="172" pc="268437770" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="173" pc="268437774" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="174" pc="268437788" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="176" pc="268437793" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="177" pc="268437816" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="178" pc="268437844" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="180" pc="268437886" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="181" pc="268437914" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="183" pc="268437919" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="185" pc="268437937" symbol="drawHeartRate"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="188" pc="268437965" symbol="drawSteps"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="189" pc="268437969" symbol="drawSteps"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="190" pc="268437983" symbol="drawSteps"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="192" pc="268437988" symbol="drawSteps"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="193" pc="268438011" symbol="drawSteps"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="195" pc="268438086" symbol="drawSteps"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="198" pc="268438114" symbol="drawBattery"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="199" pc="268438118" symbol="drawBattery"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="200" pc="268438132" symbol="drawBattery"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="202" pc="268438137" symbol="drawBattery"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="204" pc="268438174" symbol="drawBattery"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="207" pc="268438202" symbol="drawFloors"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="208" pc="268438206" symbol="drawFloors"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="209" pc="268438220" symbol="drawFloors"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="211" pc="268438225" symbol="drawFloors"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="213" pc="268438262" symbol="drawFloors"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="216" pc="268438290" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="218" pc="268438294" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="219" pc="268438330" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="220" pc="268438346" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="222" pc="268438362" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="223" pc="268438369" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="225" pc="268438376" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="226" pc="268438387" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="227" pc="268438412" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="228" pc="268438425" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="229" pc="268438436" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="230" pc="268438446" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="231" pc="268438471" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="232" pc="268438482" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="233" pc="268438507" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="234" pc="268438520" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="235" pc="268438531" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="236" pc="268438541" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="238" pc="268438560" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="241" pc="268438562" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="242" pc="268438575" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="244" pc="268438588" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="245" pc="268438626" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="247" pc="268438657" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="248" pc="268438695" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="249" pc="268438718" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="251" pc="268438773" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="252" pc="268438805" symbol="drawRectangle"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="20" lineNum="6" pc="268438867" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="20" lineNum="7" pc="268438871" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="21" lineNum="11" pc="268438890" symbol="onStart"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="22" lineNum="15" pc="268438895" symbol="onStop"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="23" lineNum="19" pc="268438900" symbol="getInitialView"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="23" lineNum="20" pc="268438904" symbol="getInitialView"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="24" lineNum="24" pc="268438942" symbol="onSettingsChanged"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="24" lineNum="25" pc="268438946" symbol="onSettingsChanged"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="26" lineNum="7" pc="268438963" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="26" lineNum="8" pc="268438967" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="26" lineNum="12" pc="268438988" symbol="initialize"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="27" lineNum="15" pc="268439009" symbol="draw"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="27" lineNum="17" pc="268439013" symbol="draw"/>
-        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="27" lineNum="18" pc="268439066" symbol="draw"/>
-        <entry filename="Rez" id="34" lineNum="29" pc="268439079" symbol="WatchFace"/>
-        <entry filename="Rez" id="34" lineNum="33" pc="268439091" symbol="WatchFace"/>
-        <entry filename="Rez" id="34" lineNum="34" pc="268439115" symbol="WatchFace"/>
-        <entry filename="Rez" id="34" lineNum="35" pc="268439278" symbol="WatchFace"/>
-        <entry filename="Rez" id="34" lineNum="36" pc="268439303" symbol="WatchFace"/>
-        <entry filename="Rez" id="34" lineNum="37" pc="268439355" symbol="WatchFace"/>
-        <entry filename="Rez" id="34" lineNum="40" pc="268439401" symbol="WatchFace"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="27" pc="268435456" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="29" pc="268435460" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="30" pc="268435478" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="31" pc="268435488" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="33" pc="268435522" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="34" pc="268435542" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="35" pc="268435562" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="36" pc="268435582" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="3" lineNum="37" pc="268435602" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="4" lineNum="42" pc="268435623" symbol="onEnterSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="4" lineNum="44" pc="268435627" symbol="onEnterSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="4" lineNum="45" pc="268435637" symbol="onEnterSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="5" lineNum="50" pc="268435656" symbol="onExitSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="5" lineNum="52" pc="268435660" symbol="onExitSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="56" pc="268435671" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="58" pc="268435675" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="59" pc="268435684" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="62" pc="268435693" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="66" pc="268435708" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="82" pc="268435880" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="6" lineNum="88" pc="268435994" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="92" pc="268436059" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="94" pc="268436063" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="95" pc="268436063" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="98" pc="268436066" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="100" pc="268436076" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="101" pc="268436089" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="104" pc="268436101" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="106" pc="268436123" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="109" pc="268436127" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="110" pc="268436140" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="115" pc="268436153" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="116" pc="268436185" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="119" pc="268436197" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="120" pc="268436211" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="121" pc="268436225" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="122" pc="268436239" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="127" pc="268436253" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="128" pc="268436266" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="131" pc="268436285" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="134" pc="268436324" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="138" pc="268436354" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="141" pc="268436368" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="142" pc="268436423" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="145" pc="268436463" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="148" pc="268436474" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="149" pc="268436491" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="152" pc="268436502" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="7" lineNum="155" pc="268436519" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="160" pc="268436530" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="165" pc="268436534" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="166" pc="268436546" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="170" pc="268436563" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="171" pc="268436576" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="172" pc="268436591" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="173" pc="268436628" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="174" pc="268436665" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="176" pc="268436709" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="8" lineNum="177" pc="268436741" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="181" pc="268436756" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="183" pc="268436760" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="184" pc="268436773" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="186" pc="268436786" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="187" pc="268436786" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="188" pc="268436786" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="189" pc="268436796" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="192" pc="268436806" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="195" pc="268436824" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="197" pc="268436847" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="198" pc="268436872" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="199" pc="268436897" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="200" pc="268436922" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="202" pc="268436947" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="203" pc="268436964" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="9" lineNum="204" pc="268437024" symbol="drawHoursTicks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="208" pc="268437058" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="210" pc="268437062" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="211" pc="268437079" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="212" pc="268437110" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="213" pc="268437120" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="215" pc="268437143" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="10" lineNum="216" pc="268437175" symbol="drawHoursHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="227" pc="268437245" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="229" pc="268437249" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="230" pc="268437266" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="232" pc="268437301" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="11" lineNum="233" pc="268437333" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="244" pc="268437397" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="246" pc="268437401" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="12" lineNum="247" pc="268437433" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="252" pc="268437457" symbol="getSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="254" pc="268437461" symbol="getSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="255" pc="268437478" symbol="getSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="13" lineNum="257" pc="268437513" symbol="getSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="266" pc="268437566" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="269" pc="268437570" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="270" pc="268437587" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="271" pc="268437619" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="272" pc="268437664" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="14" lineNum="273" pc="268437696" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="284" pc="268437742" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="285" pc="268437746" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="286" pc="268437759" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="290" pc="268437772" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="291" pc="268437785" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="295" pc="268437818" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="297" pc="268437831" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="15" lineNum="300" pc="268437867" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="305" pc="268437898" symbol="drawDateString"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="306" pc="268437902" symbol="drawDateString"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="307" pc="268437950" symbol="drawDateString"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="309" pc="268438026" symbol="drawDateString"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="16" lineNum="310" pc="268438066" symbol="drawDateString"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="319" pc="268438113" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="321" pc="268438117" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="322" pc="268438309" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="323" pc="268438317" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="324" pc="268438336" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="327" pc="268438355" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="328" pc="268438373" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="329" pc="268438410" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="331" pc="268438447" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="17" lineNum="334" pc="268438509" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="338" pc="268438513" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="339" pc="268438517" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="340" pc="268438551" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="342" pc="268438585" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="343" pc="268438609" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="344" pc="268438632" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="347" pc="268438654" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="348" pc="268438677" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="351" pc="268438699" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="352" pc="268438722" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="355" pc="268438744" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="356" pc="268438767" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="18" lineNum="360" pc="268438802" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="20" lineNum="370" pc="268438830" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="20" lineNum="371" pc="268438834" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="20" lineNum="372" pc="268438866" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="20" lineNum="373" pc="268438898" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="392" pc="268438912" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="394" pc="268438916" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="396" pc="268438934" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="398" pc="268438960" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="399" pc="268438980" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="400" pc="268439000" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="401" pc="268439020" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="402" pc="268439040" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="403" pc="268439060" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="404" pc="268439080" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="405" pc="268439100" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="406" pc="268439120" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="407" pc="268439140" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="22" lineNum="408" pc="268439160" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="411" pc="268439181" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="413" pc="268439185" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="414" pc="268439195" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="416" pc="268439259" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="417" pc="268439268" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="419" pc="268439277" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="420" pc="268439292" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="23" lineNum="431" pc="268439448" symbol="onLayout"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="24" lineNum="438" pc="268439546" symbol="getDc"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="24" lineNum="442" pc="268439550" symbol="getDc"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="24" lineNum="443" pc="268439563" symbol="getDc"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="24" lineNum="444" pc="268439575" symbol="getDc"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="24" lineNum="446" pc="268439596" symbol="getDc"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="449" pc="268439600" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="451" pc="268439604" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="453" pc="268439604" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="455" pc="268439614" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="457" pc="268439629" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="458" pc="268439642" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="461" pc="268439655" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="462" pc="268439687" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="466" pc="268439699" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="468" pc="268439713" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="469" pc="268439727" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="470" pc="268439741" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="472" pc="268439755" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="473" pc="268439768" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="476" pc="268439787" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="479" pc="268439826" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="482" pc="268439843" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="484" pc="268439857" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="487" pc="268439868" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="488" pc="268439885" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="491" pc="268439896" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="25" lineNum="494" pc="268439913" symbol="onUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="500" pc="268439924" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="502" pc="268439928" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="503" pc="268439940" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="506" pc="268439957" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="507" pc="268439976" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="508" pc="268440011" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="510" pc="268440049" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="511" pc="268440064" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="512" pc="268440101" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="513" pc="268440138" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="26" lineNum="515" pc="268440182" symbol="onPartialUpdate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="27" lineNum="518" pc="268440197" symbol="onShow"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="27" lineNum="519" pc="268440201" symbol="onShow"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="28" lineNum="522" pc="268440214" symbol="onHide"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="28" lineNum="523" pc="268440218" symbol="onHide"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="29" lineNum="526" pc="268440231" symbol="onEnterSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="29" lineNum="527" pc="268440235" symbol="onEnterSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="30" lineNum="530" pc="268440246" symbol="onExitSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="30" lineNum="531" pc="268440250" symbol="onExitSleep"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="535" pc="268440261" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="536" pc="268440265" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="537" pc="268440299" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="539" pc="268440333" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="540" pc="268440357" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="541" pc="268440380" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="544" pc="268440402" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="545" pc="268440425" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="548" pc="268440447" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="549" pc="268440470" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="552" pc="268440492" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="553" pc="268440515" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="31" lineNum="557" pc="268440550" symbol="getBoundingBox"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="561" pc="268440578" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="563" pc="268440582" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="564" pc="268440595" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="568" pc="268440608" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="569" pc="268440621" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="573" pc="268440654" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="575" pc="268440667" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="32" lineNum="578" pc="268440703" symbol="drawBackground"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="33" lineNum="583" pc="268440718" symbol="drawDate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="33" lineNum="585" pc="268440722" symbol="drawDate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="33" lineNum="586" pc="268440790" symbol="drawDate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="589" pc="268440877" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="590" pc="268440881" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="591" pc="268440895" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="593" pc="268440899" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="594" pc="268440922" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="595" pc="268440950" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="597" pc="268440992" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="598" pc="268441020" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="600" pc="268441024" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="34" lineNum="602" pc="268441042" symbol="drawHeartRate"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="35" lineNum="605" pc="268441070" symbol="drawSteps"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="35" lineNum="606" pc="268441074" symbol="drawSteps"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="35" lineNum="607" pc="268441088" symbol="drawSteps"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="35" lineNum="609" pc="268441092" symbol="drawSteps"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="35" lineNum="610" pc="268441115" symbol="drawSteps"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="35" lineNum="612" pc="268441190" symbol="drawSteps"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="36" lineNum="615" pc="268441218" symbol="drawBattery"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="36" lineNum="616" pc="268441222" symbol="drawBattery"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="36" lineNum="617" pc="268441236" symbol="drawBattery"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="36" lineNum="619" pc="268441240" symbol="drawBattery"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="36" lineNum="621" pc="268441277" symbol="drawBattery"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="37" lineNum="624" pc="268441305" symbol="drawFloors"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="37" lineNum="625" pc="268441309" symbol="drawFloors"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="37" lineNum="626" pc="268441323" symbol="drawFloors"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="37" lineNum="628" pc="268441327" symbol="drawFloors"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="37" lineNum="630" pc="268441364" symbol="drawFloors"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="633" pc="268441392" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="635" pc="268441396" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="636" pc="268441426" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="637" pc="268441442" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="639" pc="268441458" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="640" pc="268441468" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="642" pc="268441478" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="643" pc="268441489" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="644" pc="268441514" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="645" pc="268441527" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="646" pc="268441538" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="647" pc="268441548" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="648" pc="268441573" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="649" pc="268441584" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="650" pc="268441609" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="651" pc="268441622" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="652" pc="268441633" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="653" pc="268441643" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="655" pc="268441662" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="658" pc="268441663" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="659" pc="268441676" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="661" pc="268441689" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="662" pc="268441721" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="664" pc="268441746" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="665" pc="268441778" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="666" pc="268441795" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="668" pc="268441844" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="38" lineNum="669" pc="268441870" symbol="drawRectangle"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="673" pc="268441926" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="676" pc="268441930" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="677" pc="268442122" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="678" pc="268442130" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="679" pc="268442149" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="682" pc="268442168" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="683" pc="268442186" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="684" pc="268442223" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="686" pc="268442260" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="39" lineNum="689" pc="268442322" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="692" pc="268442326" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="694" pc="268442330" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="695" pc="268442343" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="697" pc="268442356" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="698" pc="268442356" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="699" pc="268442356" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="700" pc="268442366" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="703" pc="268442376" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="706" pc="268442394" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="708" pc="268442417" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="709" pc="268442442" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="710" pc="268442467" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="711" pc="268442492" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="713" pc="268442517" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="714" pc="268442534" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="40" lineNum="715" pc="268442594" symbol="drawHourMarks"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="719" pc="268442628" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="721" pc="268442632" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="722" pc="268442649" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="723" pc="268442680" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="724" pc="268442690" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="726" pc="268442713" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="41" lineNum="727" pc="268442745" symbol="drawHourHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="42" lineNum="738" pc="268442815" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="42" lineNum="740" pc="268442819" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="42" lineNum="741" pc="268442836" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="42" lineNum="743" pc="268442871" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="42" lineNum="744" pc="268442903" symbol="drawMinutesHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="43" lineNum="755" pc="268442967" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="43" lineNum="757" pc="268442971" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="43" lineNum="758" pc="268442988" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="43" lineNum="760" pc="268443023" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="43" lineNum="761" pc="268443055" symbol="drawSecondsHand"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="44" lineNum="772" pc="268443119" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="44" lineNum="775" pc="268443123" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="44" lineNum="776" pc="268443140" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="44" lineNum="777" pc="268443194" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="44" lineNum="778" pc="268443239" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceView.mc" id="44" lineNum="779" pc="268443271" symbol="drawCenter"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="46" lineNum="6" pc="268443317" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="46" lineNum="7" pc="268443321" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="47" lineNum="11" pc="268443340" symbol="onStart"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="48" lineNum="15" pc="268443345" symbol="onStop"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="49" lineNum="19" pc="268443350" symbol="getInitialView"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="49" lineNum="20" pc="268443354" symbol="getInitialView"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="50" lineNum="24" pc="268443392" symbol="onSettingsChanged"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceApp.mc" id="50" lineNum="25" pc="268443396" symbol="onSettingsChanged"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="52" lineNum="7" pc="268443413" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="52" lineNum="8" pc="268443417" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="52" lineNum="12" pc="268443438" symbol="initialize"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="53" lineNum="15" pc="268443459" symbol="draw"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="53" lineNum="17" pc="268443463" symbol="draw"/>
+        <entry filename="/Users/lucian.toza/Desktop/work/eclipse-workspace/V3.SimpleWatchFace/source/V3SimpleWatchFaceBackground.mc" id="53" lineNum="18" pc="268443516" symbol="draw"/>
+        <entry filename="Rez" id="60" lineNum="29" pc="268443529" symbol="WatchFace"/>
+        <entry filename="Rez" id="60" lineNum="33" pc="268443541" symbol="WatchFace"/>
+        <entry filename="Rez" id="60" lineNum="34" pc="268443565" symbol="WatchFace"/>
+        <entry filename="Rez" id="60" lineNum="35" pc="268443728" symbol="WatchFace"/>
+        <entry filename="Rez" id="60" lineNum="36" pc="268443753" symbol="WatchFace"/>
+        <entry filename="Rez" id="60" lineNum="37" pc="268443805" symbol="WatchFace"/>
+        <entry filename="Rez" id="60" lineNum="40" pc="268443851" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
-        <entry field="true" id="18" symbol="flColor"/>
+        <entry field="true" id="16" symbol="dateBuffer"/>
+        <entry field="true" id="50" symbol="flColor"/>
+        <entry id="25" method="true" symbol="drawHoursHand"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389349" symbol="justification"/>
-        <entry id="29" method="true" symbol="drawBattery"/>
+        <entry id="60" method="true" symbol="drawBattery"/>
         <entry id="8390097" method="true" symbol="onPartialUpdate"/>
-        <entry field="true" id="35" symbol="ColorBlue"/>
-        <entry field="true" id="12" symbol="fgColor"/>
+        <entry field="true" id="38" symbol="ColorBlue"/>
+        <entry field="true" id="19" symbol="fgColor"/>
+        <entry id="12" object="true" symbol="V3SimpleWatchFaceViewOld"/>
         <entry field="true" id="8389759" symbol="radius"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="26" method="true" symbol="drawDate"/>
-        <entry id="9" object="true" symbol="V3SimpleWatchFaceView"/>
+        <entry id="57" method="true" symbol="drawDate"/>
+        <entry field="true" id="15" symbol="offscreenBuffer"/>
+        <entry field="true" id="23" symbol="handColor"/>
+        <entry id="10" object="true" symbol="V3SimpleWatchFaceView"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="42" symbol="ColorWhite"/>
+        <entry id="63" method="true" symbol="drawHourHand"/>
+        <entry field="true" id="45" symbol="ColorWhite"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389068" method="true" symbol="draw"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8390098" method="true" symbol="onPowerBudgetExceeded"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="41" symbol="ColorBlack"/>
+        <entry field="true" id="44" symbol="ColorBlack"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="8389123" method="true" symbol="onShow"/>
-        <entry id="30" method="true" symbol="drawFloors"/>
-        <entry field="true" id="17" symbol="stColor"/>
-        <entry field="true" id="36" symbol="ColorRed"/>
-        <entry field="true" id="37" symbol="ForegroundColorTitle"/>
-        <entry field="true" id="21" symbol="isColor"/>
+        <entry id="61" method="true" symbol="drawFloors"/>
+        <entry field="true" id="49" symbol="stColor"/>
+        <entry id="8390101" object="true" symbol="BufferedBitmap"/>
+        <entry field="true" id="39" symbol="ColorRed"/>
+        <entry id="27" method="true" symbol="drawSecondsHand"/>
+        <entry id="33" method="true" symbol="getBoundingBox"/>
+        <entry field="true" id="40" symbol="ForegroundColorTitle"/>
+        <entry field="true" id="53" symbol="isColor"/>
         <entry id="8388702" method="true" symbol="initialize"/>
-        <entry field="true" id="43" symbol="AppName"/>
+        <entry field="true" id="46" symbol="AppName"/>
+        <entry field="true" id="55" symbol="centerPoint"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
-        <entry field="true" id="16" symbol="btColor"/>
+        <entry field="true" id="48" symbol="btColor"/>
         <entry id="8390146" module="true" object="true" symbol="Background"/>
-        <entry id="24" method="true" symbol="drawBackground"/>
+        <entry id="30" method="true" symbol="drawBackground"/>
         <entry id="8388641" module="true" symbol="Math"/>
-        <entry id="10" object="true" symbol="V3SimpleWatchFaceApp"/>
-        <entry field="true" id="33" symbol="LauncherIcon"/>
-        <entry id="25" method="true" symbol="drawTime"/>
+        <entry id="13" object="true" symbol="V3SimpleWatchFaceApp"/>
+        <entry field="true" id="36" symbol="LauncherIcon"/>
+        <entry id="11" object="true" symbol="V3SimpleWatchFaceDelegate"/>
         <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="8389660" symbol="palette"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry field="true" id="13" symbol="bgColor"/>
+        <entry field="true" id="20" symbol="bgColor"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="39" symbol="ColorDarkGray"/>
-        <entry id="28" method="true" symbol="drawSteps"/>
+        <entry field="true" id="42" symbol="ColorDarkGray"/>
+        <entry id="59" method="true" symbol="drawSteps"/>
         <entry id="8389181" method="true" symbol="drawRectangle"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="23" symbol="active"/>
+        <entry field="true" id="56" symbol="active"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry id="8389348" symbol="font"/>
-        <entry field="true" id="34" symbol="ColorLightGray"/>
+        <entry field="true" id="37" symbol="ColorLightGray"/>
+        <entry field="true" id="17" symbol="screenCenterPoint"/>
+        <entry id="24" method="true" symbol="drawHoursTicks"/>
         <entry id="8389347" symbol="color"/>
-        <entry field="true" id="38" symbol="BackgroundColorTitle"/>
-        <entry id="32" module="true" symbol="Layouts"/>
-        <entry field="true" id="15" symbol="hrColor"/>
+        <entry field="true" id="14" symbol="isAwake"/>
+        <entry field="true" id="41" symbol="BackgroundColorTitle"/>
+        <entry id="62" method="true" symbol="drawHourMarks"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="8390110" method="true" symbol="getDc"/>
+        <entry id="28" method="true" symbol="getSecondsHand"/>
+        <entry id="26" method="true" symbol="drawMinutesHand"/>
+        <entry id="35" module="true" symbol="Layouts"/>
+        <entry field="true" id="47" symbol="hrColor"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry id="27" method="true" symbol="drawHeartRate"/>
-        <entry field="true" id="40" symbol="MilitaryFormatTitle"/>
-        <entry field="true" id="14" symbol="bdColor"/>
+        <entry id="58" method="true" symbol="drawHeartRate"/>
+        <entry id="31" method="true" symbol="drawDateString"/>
+        <entry field="true" id="43" symbol="MilitaryFormatTitle"/>
+        <entry field="true" id="22" symbol="ticksColor"/>
+        <entry field="true" id="18" symbol="fullScreenRefresh"/>
+        <entry field="true" id="21" symbol="bdColor"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="20" symbol="imColor"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry field="true" id="52" symbol="imColor"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry id="31" module="true" symbol="Menus"/>
-        <entry field="true" id="11" symbol="dc"/>
+        <entry id="32" method="true" symbol="generateHandCoordinates"/>
+        <entry id="29" method="true" symbol="drawCenter"/>
+        <entry id="34" module="true" symbol="Menus"/>
+        <entry field="true" id="9" symbol="partialUpdatesAllowed"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry field="true" id="19" symbol="ihColor"/>
-        <entry field="true" id="22" symbol="hhColor"/>
+        <entry field="true" id="51" symbol="ihColor"/>
+        <entry field="true" id="54" symbol="hhColor"/>
     </symbolTable>
     <localVars>
-        <entry endPc="268435739" name="dc" stackId="1" startPc="268435734"/>
-        <entry endPc="268435744" name="dc" stackId="1" startPc="268435739"/>
-        <entry endPc="268435847" name="dc" stackId="1" startPc="268435808"/>
-        <entry endPc="268436592" name="ry" stackId="7" startPc="268435967"/>
-        <entry endPc="268436592" name="rx" stackId="6" startPc="268435967"/>
-        <entry endPc="268436592" name="radian" stackId="5" startPc="268435967"/>
-        <entry endPc="268436605" name="i" stackId="4" startPc="268435967"/>
-        <entry endPc="268437435" name="opprx" stackId="13" startPc="268437151"/>
-        <entry endPc="268437435" name="oppry" stackId="14" startPc="268437151"/>
-        <entry endPc="268437435" name="oppradian" stackId="12" startPc="268437151"/>
-        <entry endPc="268437438" name="ry" stackId="11" startPc="268436683"/>
-        <entry endPc="268437438" name="rx" stackId="10" startPc="268436683"/>
-        <entry endPc="268437438" name="radian" stackId="9" startPc="268436683"/>
-        <entry endPc="268437451" name="i" stackId="8" startPc="268436683"/>
-        <entry endPc="268437650" name="hour" stackId="2" startPc="268435912"/>
-        <entry endPc="268437650" name="min" stackId="3" startPc="268435912"/>
-        <entry endPc="268437650" name="time" stackId="1" startPc="268435912"/>
-        <entry endPc="268437769" name="text" stackId="1" startPc="268437655"/>
-        <entry endPc="268437964" name="hr" stackId="1" startPc="268437774"/>
-        <entry endPc="268437964" name="text" stackId="2" startPc="268437774"/>
-        <entry endPc="268438113" name="steps" stackId="1" startPc="268437969"/>
-        <entry endPc="268438113" name="text" stackId="2" startPc="268437969"/>
-        <entry endPc="268438201" name="text" stackId="1" startPc="268438118"/>
-        <entry endPc="268438289" name="text" stackId="1" startPc="268438206"/>
-        <entry endPc="268438866" name="x" stackId="9" startPc="268438294"/>
-        <entry endPc="268438866" name="ty" stackId="8" startPc="268438294"/>
-        <entry endPc="268438866" name="tx" stackId="7" startPc="268438294"/>
-        <entry endPc="268438866" name="w" stackId="5" startPc="268438294"/>
-        <entry endPc="268438866" name="size" stackId="4" startPc="268438294"/>
-        <entry endPc="268438866" name="h" stackId="6" startPc="268438294"/>
-        <entry endPc="268438866" name="y" stackId="10" startPc="268438294"/>
-        <entry endPc="268438867" name="position" stackId="3" startPc="268438290"/>
-        <entry endPc="268438867" name="color" stackId="2" startPc="268438290"/>
-        <entry endPc="268438867" name="text" stackId="1" startPc="268438290"/>
-        <entry endPc="268438895" name="state" stackId="1" startPc="268438890"/>
-        <entry endPc="268438900" name="state" stackId="1" startPc="268438895"/>
-        <entry endPc="268439008" name="dictionary" stackId="1" startPc="268438967"/>
-        <entry endPc="268439079" name="dc" stackId="1" startPc="268439009"/>
-        <entry endPc="268439428" name="rez_cmp_local_bitmap_TimeLabel" stackId="3" startPc="268439091"/>
-        <entry endPc="268439428" name="rez_cmp_local_bitmap_TimeLabel_fontHeight" stackId="4" startPc="268439091"/>
-        <entry endPc="268439428" name="rez_cmp_local_custom_drawable_81047461747955965926" stackId="2" startPc="268439091"/>
-        <entry endPc="268439429" name="dc" stackId="1" startPc="268439079"/>
+        <entry endPc="268436059" name="dc" stackId="1" startPc="268435671"/>
+        <entry endPc="268436351" name="dateDc" stackId="5" startPc="268436266"/>
+        <entry endPc="268436529" name="height" stackId="3" startPc="268436063"/>
+        <entry endPc="268436529" name="dataString" stackId="6" startPc="268436063"/>
+        <entry endPc="268436529" name="targetDc" stackId="4" startPc="268436063"/>
+        <entry endPc="268436529" name="width" stackId="2" startPc="268436063"/>
+        <entry endPc="268436530" name="dc" stackId="1" startPc="268436059"/>
+        <entry endPc="268436755" name="bboxHeight" stackId="5" startPc="268436534"/>
+        <entry endPc="268436755" name="bboxWidth" stackId="4" startPc="268436534"/>
+        <entry endPc="268436755" name="secondsHand" stackId="2" startPc="268436534"/>
+        <entry endPc="268436755" name="curClip" stackId="3" startPc="268436534"/>
+        <entry endPc="268436756" name="dc" stackId="1" startPc="268436530"/>
+        <entry endPc="268437044" name="radians" stackId="11" startPc="268436824"/>
+        <entry endPc="268437057" name="i" stackId="10" startPc="268436824"/>
+        <entry endPc="268437057" name="height" stackId="3" startPc="268436760"/>
+        <entry endPc="268437057" name="eY" stackId="7" startPc="268436760"/>
+        <entry endPc="268437057" name="eX" stackId="6" startPc="268436760"/>
+        <entry endPc="268437057" name="width" stackId="2" startPc="268436760"/>
+        <entry endPc="268437057" name="innerRad" stackId="9" startPc="268436760"/>
+        <entry endPc="268437057" name="outerRad" stackId="8" startPc="268436760"/>
+        <entry endPc="268437057" name="sY" stackId="5" startPc="268436760"/>
+        <entry endPc="268437057" name="sX" stackId="4" startPc="268436760"/>
+        <entry endPc="268437058" name="dc" stackId="1" startPc="268436756"/>
+        <entry endPc="268437244" name="hourHandAngle" stackId="3" startPc="268437062"/>
+        <entry endPc="268437244" name="clockTime" stackId="2" startPc="268437062"/>
+        <entry endPc="268437245" name="dc" stackId="1" startPc="268437058"/>
+        <entry endPc="268437396" name="minHandAngle" stackId="3" startPc="268437249"/>
+        <entry endPc="268437396" name="clockTime" stackId="2" startPc="268437249"/>
+        <entry endPc="268437397" name="dc" stackId="1" startPc="268437245"/>
+        <entry endPc="268437457" name="dc" stackId="1" startPc="268437397"/>
+        <entry endPc="268437565" name="clockTime" stackId="1" startPc="268437461"/>
+        <entry endPc="268437565" name="secHandAngle" stackId="2" startPc="268437461"/>
+        <entry endPc="268437742" name="dc" stackId="1" startPc="268437566"/>
+        <entry endPc="268437897" name="height" stackId="3" startPc="268437746"/>
+        <entry endPc="268437897" name="width" stackId="2" startPc="268437746"/>
+        <entry endPc="268437898" name="dc" stackId="1" startPc="268437742"/>
+        <entry endPc="268438112" name="dateStr" stackId="5" startPc="268437902"/>
+        <entry endPc="268438112" name="info" stackId="4" startPc="268437902"/>
+        <entry endPc="268438113" name="x" stackId="2" startPc="268437898"/>
+        <entry endPc="268438113" name="dc" stackId="1" startPc="268437898"/>
+        <entry endPc="268438113" name="y" stackId="3" startPc="268437898"/>
+        <entry endPc="268438496" name="x" stackId="11" startPc="268438373"/>
+        <entry endPc="268438496" name="y" stackId="12" startPc="268438373"/>
+        <entry endPc="268438509" name="i" stackId="10" startPc="268438373"/>
+        <entry endPc="268438512" name="result" stackId="7" startPc="268438117"/>
+        <entry endPc="268438512" name="sin" stackId="9" startPc="268438117"/>
+        <entry endPc="268438512" name="cos" stackId="8" startPc="268438117"/>
+        <entry endPc="268438512" name="coords" stackId="6" startPc="268438117"/>
+        <entry endPc="268438513" name="handLength" stackId="3" startPc="268438113"/>
+        <entry endPc="268438513" name="tailLength" stackId="4" startPc="268438113"/>
+        <entry endPc="268438513" name="width" stackId="5" startPc="268438113"/>
+        <entry endPc="268438513" name="angle" stackId="2" startPc="268438113"/>
+        <entry endPc="268438513" name="centerPoint" stackId="1" startPc="268438113"/>
+        <entry endPc="268438802" name="i" stackId="4" startPc="268438609"/>
+        <entry endPc="268438829" name="max" stackId="3" startPc="268438517"/>
+        <entry endPc="268438829" name="min" stackId="2" startPc="268438517"/>
+        <entry endPc="268438830" name="points" stackId="1" startPc="268438513"/>
+        <entry endPc="268438909" name="powerInfo" stackId="1" startPc="268438830"/>
+        <entry endPc="268439546" name="dc" stackId="1" startPc="268439181"/>
+        <entry endPc="268439600" name="dc" stackId="1" startPc="268439546"/>
+        <entry endPc="268439840" name="dateDc" stackId="4" startPc="268439768"/>
+        <entry endPc="268439923" name="height" stackId="3" startPc="268439604"/>
+        <entry endPc="268439923" name="width" stackId="2" startPc="268439604"/>
+        <entry endPc="268439924" name="dc" stackId="1" startPc="268439600"/>
+        <entry endPc="268440196" name="bboxHeight" stackId="7" startPc="268439928"/>
+        <entry endPc="268440196" name="secondHand" stackId="3" startPc="268439928"/>
+        <entry endPc="268440196" name="secondHandPoints" stackId="4" startPc="268439928"/>
+        <entry endPc="268440196" name="bboxWidth" stackId="6" startPc="268439928"/>
+        <entry endPc="268440196" name="curClip" stackId="5" startPc="268439928"/>
+        <entry endPc="268440196" name="clockTime" stackId="2" startPc="268439928"/>
+        <entry endPc="268440197" name="dc" stackId="1" startPc="268439924"/>
+        <entry endPc="268440550" name="i" stackId="4" startPc="268440357"/>
+        <entry endPc="268440577" name="max" stackId="3" startPc="268440265"/>
+        <entry endPc="268440577" name="min" stackId="2" startPc="268440265"/>
+        <entry endPc="268440578" name="points" stackId="1" startPc="268440261"/>
+        <entry endPc="268440717" name="height" stackId="3" startPc="268440582"/>
+        <entry endPc="268440717" name="width" stackId="2" startPc="268440582"/>
+        <entry endPc="268440718" name="dc" stackId="1" startPc="268440578"/>
+        <entry endPc="268440876" name="text" stackId="2" startPc="268440722"/>
+        <entry endPc="268440877" name="dc" stackId="1" startPc="268440718"/>
+        <entry endPc="268441069" name="hr" stackId="1" startPc="268440881"/>
+        <entry endPc="268441069" name="text" stackId="2" startPc="268440881"/>
+        <entry endPc="268441217" name="steps" stackId="1" startPc="268441074"/>
+        <entry endPc="268441217" name="text" stackId="2" startPc="268441074"/>
+        <entry endPc="268441304" name="text" stackId="1" startPc="268441222"/>
+        <entry endPc="268441391" name="text" stackId="1" startPc="268441309"/>
+        <entry endPc="268441925" name="x" stackId="10" startPc="268441396"/>
+        <entry endPc="268441925" name="ty" stackId="9" startPc="268441396"/>
+        <entry endPc="268441925" name="tx" stackId="8" startPc="268441396"/>
+        <entry endPc="268441925" name="w" stackId="6" startPc="268441396"/>
+        <entry endPc="268441925" name="size" stackId="5" startPc="268441396"/>
+        <entry endPc="268441925" name="h" stackId="7" startPc="268441396"/>
+        <entry endPc="268441925" name="y" stackId="11" startPc="268441396"/>
+        <entry endPc="268441926" name="position" stackId="4" startPc="268441392"/>
+        <entry endPc="268441926" name="dc" stackId="1" startPc="268441392"/>
+        <entry endPc="268441926" name="color" stackId="3" startPc="268441392"/>
+        <entry endPc="268441926" name="text" stackId="2" startPc="268441392"/>
+        <entry endPc="268442309" name="x" stackId="11" startPc="268442186"/>
+        <entry endPc="268442309" name="y" stackId="12" startPc="268442186"/>
+        <entry endPc="268442322" name="i" stackId="10" startPc="268442186"/>
+        <entry endPc="268442325" name="result" stackId="7" startPc="268441930"/>
+        <entry endPc="268442325" name="sin" stackId="9" startPc="268441930"/>
+        <entry endPc="268442325" name="cos" stackId="8" startPc="268441930"/>
+        <entry endPc="268442325" name="coords" stackId="6" startPc="268441930"/>
+        <entry endPc="268442326" name="handLength" stackId="3" startPc="268441926"/>
+        <entry endPc="268442326" name="tailLength" stackId="4" startPc="268441926"/>
+        <entry endPc="268442326" name="width" stackId="5" startPc="268441926"/>
+        <entry endPc="268442326" name="angle" stackId="2" startPc="268441926"/>
+        <entry endPc="268442326" name="centerPoint" stackId="1" startPc="268441926"/>
+        <entry endPc="268442614" name="radians" stackId="11" startPc="268442394"/>
+        <entry endPc="268442627" name="i" stackId="10" startPc="268442394"/>
+        <entry endPc="268442627" name="height" stackId="3" startPc="268442330"/>
+        <entry endPc="268442627" name="eY" stackId="7" startPc="268442330"/>
+        <entry endPc="268442627" name="eX" stackId="6" startPc="268442330"/>
+        <entry endPc="268442627" name="width" stackId="2" startPc="268442330"/>
+        <entry endPc="268442627" name="innerRad" stackId="9" startPc="268442330"/>
+        <entry endPc="268442627" name="outerRad" stackId="8" startPc="268442330"/>
+        <entry endPc="268442627" name="sY" stackId="5" startPc="268442330"/>
+        <entry endPc="268442627" name="sX" stackId="4" startPc="268442330"/>
+        <entry endPc="268442628" name="dc" stackId="1" startPc="268442326"/>
+        <entry endPc="268442814" name="hourHandAngle" stackId="3" startPc="268442632"/>
+        <entry endPc="268442814" name="clockTime" stackId="2" startPc="268442632"/>
+        <entry endPc="268442815" name="dc" stackId="1" startPc="268442628"/>
+        <entry endPc="268442966" name="minHandAngle" stackId="3" startPc="268442819"/>
+        <entry endPc="268442966" name="clockTime" stackId="2" startPc="268442819"/>
+        <entry endPc="268442967" name="dc" stackId="1" startPc="268442815"/>
+        <entry endPc="268443118" name="clockTime" stackId="2" startPc="268442971"/>
+        <entry endPc="268443118" name="secHandAngle" stackId="3" startPc="268442971"/>
+        <entry endPc="268443119" name="dc" stackId="1" startPc="268442967"/>
+        <entry endPc="268443317" name="dc" stackId="1" startPc="268443119"/>
+        <entry endPc="268443345" name="state" stackId="1" startPc="268443340"/>
+        <entry endPc="268443350" name="state" stackId="1" startPc="268443345"/>
+        <entry endPc="268443458" name="dictionary" stackId="1" startPc="268443417"/>
+        <entry endPc="268443529" name="dc" stackId="1" startPc="268443459"/>
+        <entry endPc="268443878" name="rez_cmp_local_bitmap_TimeLabel" stackId="3" startPc="268443541"/>
+        <entry endPc="268443878" name="rez_cmp_local_bitmap_TimeLabel_fontHeight" stackId="4" startPc="268443541"/>
+        <entry endPc="268443878" name="rez_cmp_local_custom_drawable_14486910489319395891" stackId="2" startPc="268443541"/>
+        <entry endPc="268443879" name="dc" stackId="1" startPc="268443529"/>
     </localVars>
     <annotations/>
     <functions>
         <functionEntry accessMode="public" name="initialize" parent="V3SimpleWatchFaceView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onLayout" parent="V3SimpleWatchFaceView">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onPartialUpdate" parent="V3SimpleWatchFaceView">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onShow" parent="V3SimpleWatchFaceView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onHide" parent="V3SimpleWatchFaceView">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onEnterSleep" parent="V3SimpleWatchFaceView">
@@ -301,35 +605,155 @@
         <functionEntry accessMode="public" name="onExitSleep" parent="V3SimpleWatchFaceView">
             <documentation/>
         </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
         <functionEntry accessMode="public" name="onUpdate" parent="V3SimpleWatchFaceView">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawBackground" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="onPartialUpdate" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawTime" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="drawHoursTicks" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawDate" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="drawHoursHand" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawHeartRate" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="drawMinutesHand" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawSteps" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="drawSecondsHand" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawBattery" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="getSecondsHand" parent="V3SimpleWatchFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawFloors" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="drawCenter" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" name="drawRectangle" parent="V3SimpleWatchFaceView">
+        <functionEntry accessMode="public" name="drawBackground" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawDateString" parent="V3SimpleWatchFaceView">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="generateHandCoordinates" parent="V3SimpleWatchFaceView">
+            <param id="centerPoint"/>
+            <param id="angle"/>
+            <param id="handLength"/>
+            <param id="tailLength"/>
+            <param id="width"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="getBoundingBox" parent="V3SimpleWatchFaceView">
+            <param id="points"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPowerBudgetExceeded" parent="V3SimpleWatchFaceDelegate">
+            <param id="powerInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="getDc" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPartialUpdate" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="getBoundingBox" parent="V3SimpleWatchFaceViewOld">
+            <param id="points"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawBackground" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawDate" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawHeartRate" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawSteps" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawBattery" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawFloors" parent="V3SimpleWatchFaceViewOld">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawRectangle" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
             <param id="text"/>
             <param id="color"/>
             <param id="position"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="generateHandCoordinates" parent="V3SimpleWatchFaceViewOld">
+            <param id="centerPoint"/>
+            <param id="angle"/>
+            <param id="handLength"/>
+            <param id="tailLength"/>
+            <param id="width"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawHourMarks" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawHourHand" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawMinutesHand" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawSecondsHand" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" name="drawCenter" parent="V3SimpleWatchFaceViewOld">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="V3SimpleWatchFaceApp">
@@ -365,15 +789,17 @@
     </functions>
     <dataEntryOffsetMappings>
         <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry offset="182" parentId="globals" symbolId="Background" type="class"/>
-        <dataEntry offset="237" parentId="globals" symbolId="V3SimpleWatchFaceView" type="class"/>
-        <dataEntry offset="516" parentId="globals" symbolId="V3SimpleWatchFaceApp" type="class"/>
-        <dataEntry offset="595" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry offset="674" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry offset="713" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry offset="744" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry offset="775" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry offset="806" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry offset="845" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="206" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry offset="261" parentId="globals" symbolId="V3SimpleWatchFaceView" type="class"/>
+        <dataEntry offset="508" parentId="globals" symbolId="V3SimpleWatchFaceApp" type="class"/>
+        <dataEntry offset="587" parentId="globals" symbolId="V3SimpleWatchFaceDelegate" type="class"/>
+        <dataEntry offset="642" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="721" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="760" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="791" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="822" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="853" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="892" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="1003" parentId="globals" symbolId="V3SimpleWatchFaceViewOld" type="class"/>
     </dataEntryOffsetMappings>
 </debugInfo>

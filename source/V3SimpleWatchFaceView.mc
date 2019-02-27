@@ -8,13 +8,392 @@ using Toybox.Activity as Act;
 using Toybox.Math as Math;
 using Toybox.Application as App;
 
-class V3SimpleWatchFaceView extends Ui.WatchFace {
 
-    hidden var dc, radius, fgColor, bgColor, bdColor, hrColor, btColor, stColor, flColor, ihColor, imColor, isColor, hhColor, active;
+var partialUpdatesAllowed = false;
 
-    function initialize() {
+// This implements an analog watch face
+// Original design by Austen Harbour
+class V3SimpleWatchFaceView extends Ui.WatchFace
+{   
+    var isAwake;
+    var offscreenBuffer;
+    var dateBuffer;
+    var screenCenterPoint;
+    var fullScreenRefresh;
+    
+    var fgColor, bgColor, bdColor, ticksColor, handColor;  
+
+    // Initialize variables for this view
+    function initialize() 
+    {
         WatchFace.initialize();
-        radius = Sys.getDeviceSettings().screenWidth / 2;
+        fullScreenRefresh = true;
+        partialUpdatesAllowed = (Toybox.WatchUi.WatchFace has :onPartialUpdate);
+        
+        fgColor = Gfx.COLOR_WHITE;
+        bgColor = Gfx.COLOR_BLACK;
+        ticksColor = Gfx.COLOR_YELLOW;
+        handColor = Gfx.COLOR_ORANGE;
+        bdColor = Gfx.COLOR_LT_GRAY;
+    }
+    
+    // This method is called when the device re-enters sleep mode.
+    // Set the isAwake flag to let onUpdate know it should stop rendering the second hand.
+    function onEnterSleep() 
+    {
+        isAwake = false;
+        WatchUi.requestUpdate();
+    }
+
+    // This method is called when the device exits sleep mode.
+    // Set the isAwake flag to let onUpdate know it should render the second hand.
+    function onExitSleep() 
+    {
+        isAwake = true;
+    }
+
+    // Configure the layout of the watchface for this device
+    function onLayout(dc) 
+    {
+    	offscreenBuffer = null;
+    	dateBuffer = null;
+
+        // If this device supports BufferedBitmap, allocate the buffers we use for drawing
+        if(Gfx has :BufferedBitmap) {
+            // Allocate a full screen size buffer with a palette of only 4 colors to draw
+            // the background image of the watchface.  This is used to facilitate blanking
+            // the second hand during partial updates of the display
+            offscreenBuffer = new Gfx.BufferedBitmap({
+                :width => dc.getWidth(),
+                :height => dc.getHeight(),
+                :palette => [
+                    bgColor,
+                    fgColor,
+                    bdColor,
+                    ticksColor,
+                    handColor
+                ]
+            });
+
+            // Allocate a buffer tall enough to draw the date into the full width of the
+            // screen. This buffer is also used for blanking the second hand. This full
+            // color buffer is needed because anti-aliased fonts cannot be drawn into
+            // a buffer with a reduced color palette
+            dateBuffer = new Gfx.BufferedBitmap({
+                :width => dc.getTextWidthInPixels("99", Gfx.FONT_XTINY),
+                :height => Gfx.getFontHeight(Gfx.FONT_XTINY)
+            });
+        } 
+
+        screenCenterPoint = [dc.getWidth() / 2, dc.getHeight() / 2];
+    }
+
+    // Handle the update event
+    function onUpdate(dc) 
+    {
+        var width, height;
+        var targetDc = null;
+        
+		// We always want to refresh the full screen when we get a regular onUpdate call.
+        fullScreenRefresh = true;
+
+        if (null != offscreenBuffer) {
+            dc.clearClip();
+            // If we have an offscreen buffer that we are using to draw the background,
+            // set the draw context of that buffer as our target.
+            targetDc = offscreenBuffer.getDc();
+        } else {
+            targetDc = dc;
+        }
+
+        width = targetDc.getWidth();
+        height = targetDc.getHeight();
+
+        // Fill the entire background with Black.
+        //targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        //targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
+        targetDc.setColor(Gfx.COLOR_TRANSPARENT, bgColor);
+        targetDc.clear();       
+
+        // Draw the tick marks around the edges of the screen
+        drawHoursTicks(targetDc);
+        drawHoursHand(targetDc);
+        drawMinutesHand(targetDc);
+        drawCenter(targetDc);
+       
+        // If we have an offscreen buffer that we are using for the date string,
+        // Draw the date into it. If we do not, the date will get drawn every update
+        // after blanking the second hand.
+        if( null != dateBuffer ) {
+            var dateDc = dateBuffer.getDc();
+
+            //Draw the background image buffer into the date buffer to set the background
+            dateDc.drawBitmap(0, -(height / 4), offscreenBuffer);
+
+            //Draw the date string into the buffer.
+            drawDateString( dateDc, width / 2, 0 );
+        }
+
+        // Output the offscreen buffers to the main display if required.
+        drawBackground(dc);
+
+        // Draw the battery percentage directly to the main screen.
+        var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";       
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+//        dc.drawText(width / 2, 3*height/4, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
+
+        if (partialUpdatesAllowed) {
+            // If this device supports partial updates and they are currently
+            // allowed run the onPartialUpdate method to draw the second hand.
+            onPartialUpdate(dc);
+        } else if (isAwake) {
+            // Otherwise, if we are out of sleep mode, draw the second hand
+            // directly in the full update method.
+            drawSecondsHand(dc);
+        }
+
+        fullScreenRefresh = false;
+    }
+
+
+    // Handle the partial update event
+    function onPartialUpdate(dc) 
+    {
+        // If we're not doing a full screen refresh we need to re-draw the background
+        // before drawing the updated second hand position. Note this will only re-draw
+        // the background in the area specified by the previously computed clipping region.
+        if(!fullScreenRefresh) {
+            drawBackground(dc);
+        }
+
+        // Update the cliping rectangle to the new location of the second hand.
+        var secondsHand = getSecondsHand();
+        var curClip = getBoundingBox(secondsHand);
+        var bboxWidth = curClip[1][0] - curClip[0][0] + 1;
+        var bboxHeight = curClip[1][1] - curClip[0][1] + 1;
+        dc.setClip(curClip[0][0], curClip[0][1], bboxWidth, bboxHeight);
+        
+        dc.setColor(handColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(secondsHand);
+    }
+    
+    // Draws the clock tick marks around the outside edges of the screen.
+    function drawHoursTicks(dc) 
+    {
+    	var width = dc.getWidth();
+        var height = dc.getHeight();
+        
+        var sX, sY;
+        var eX, eY;
+        var outerRad = width / 2;
+        var innerRad = outerRad - 10;
+            
+        // Loop through each 15 minute block and draw tick marks.
+        for (var i = 0; i < 12; i += 1) {
+            // Partially unrolled loop to draw two tickmarks in 15 minute block.
+            
+            var radians = Math.PI / 6 * i;
+            
+            sY = outerRad + innerRad * Math.sin(radians);
+            eY = outerRad + outerRad * Math.sin(radians);
+            sX = outerRad + innerRad * Math.cos(radians);
+            eX = outerRad + outerRad * Math.cos(radians);
+            
+            dc.setPenWidth(2);
+            dc.setColor(i % 3 == 0 ? ticksColor : fgColor, Gfx.COLOR_TRANSPARENT);
+            dc.drawLine(sX, sY, eX, eY);
+        }    
+    }
+    
+    function drawHoursHand(dc)
+    {
+    	var clockTime = Sys.getClockTime();
+    	var hourHandAngle = (((clockTime.hour % 12) * 60) + clockTime.min);
+        hourHandAngle = hourHandAngle / (12 * 60.0);
+        hourHandAngle = hourHandAngle * Math.PI * 2;
+
+		dc.setColor(ticksColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(
+        	generateHandCoordinates(
+        		screenCenterPoint, 
+        		hourHandAngle, 
+        		screenCenterPoint[0] * 3 / 5, 
+        		0, 
+        		3
+        	)
+        );
+    }
+    
+    function drawMinutesHand(dc)
+    {
+    	var clockTime = Sys.getClockTime();
+    	var minHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
+
+		dc.setColor(ticksColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(
+        	generateHandCoordinates(
+        		screenCenterPoint, 
+        		minHandAngle, 
+        		screenCenterPoint[0] - 17, 
+        		0, 
+        		2
+        	)
+        );
+    }
+    
+    function drawSecondsHand(dc)
+    {
+    	dc.setColor(handColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(
+        	getSecondsHand()
+        );
+    }
+    
+    function getSecondsHand()
+    {
+    	var clockTime = Sys.getClockTime();
+    	var secHandAngle = (clockTime.sec / 60.0) * Math.PI * 2;
+    	
+    	return generateHandCoordinates(
+			screenCenterPoint, 
+			secHandAngle, 
+			screenCenterPoint[0] - 15, 
+			20, 
+			1
+		);
+    }
+    
+    function drawCenter(dc)
+    {
+    	// draw center circle
+        dc.setPenWidth(3);
+        dc.setColor(handColor, Gfx.COLOR_TRANSPARENT);
+        dc.drawCircle(screenCenterPoint[0], screenCenterPoint[1], 6);
+        dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillCircle(screenCenterPoint[0], screenCenterPoint[1], 4);
+    }
+    
+
+    
+
+    // Draw the watch face background
+    // onUpdate uses this method to transfer newly rendered Buffered Bitmaps
+    // to the main display.
+    // onPartialUpdate uses this to blank the second hand from the previous
+    // second before outputing the new one.
+    function drawBackground(dc) {
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+
+        //If we have an offscreen buffer that has been written to
+        //draw it to the screen.
+        if( null != offscreenBuffer ) {
+            dc.drawBitmap(0, 0, offscreenBuffer);
+        }
+
+        // Draw the date
+        if( null != dateBuffer ) {
+            // If the date is saved in a Buffered Bitmap, just copy it from there.
+            dc.drawBitmap(0, (height / 4), dateBuffer );
+        } else {
+            // Otherwise, draw it from scratch.
+            drawDateString( dc, width / 2, height / 4 );
+        }
+    }
+    
+    // Draw the date string into the provided buffer at the specified location
+    hidden function drawDateString( dc, x, y ) {
+        var info = Greg.info(Time.now(), Time.FORMAT_LONG);
+        var dateStr = Lang.format("$1$ $2$ $3$", [info.day_of_week, info.month, info.day]);
+
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(x, y, Graphics.FONT_XTINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER);
+    }
+
+    
+    
+    // This function is used to generate the coordinates of the 4 corners of the polygon
+    // used to draw a watch hand. The coordinates are generated with specified length,
+    // tail length, and width and rotated around the center point at the provided angle.
+    // 0 degrees is at the 12 o'clock position, and increases in the clockwise direction.
+    hidden function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) {
+        // Map out the coordinates of the watch hand
+        var coords = [[-(width / 2), tailLength], [-(width / 2), -handLength], [width / 2, -handLength], [width / 2, tailLength]];
+        var result = new [4];
+        var cos = Math.cos(angle);
+        var sin = Math.sin(angle);
+
+        // Transform the coordinates
+        for (var i = 0; i < 4; i += 1) {
+            var x = (coords[i][0] * cos) - (coords[i][1] * sin) + 0.5;
+            var y = (coords[i][0] * sin) + (coords[i][1] * cos) + 0.5;
+
+            result[i] = [centerPoint[0] + x, centerPoint[1] + y];
+        }
+
+        return result;
+    }
+    
+    // Compute a bounding box from the passed in points
+    hidden function getBoundingBox( points ) {
+        var min = [9999,9999];
+        var max = [0,0];
+
+        for (var i = 0; i < points.size(); ++i) {
+            if(points[i][0] < min[0]) {
+                min[0] = points[i][0];
+            }
+
+            if(points[i][1] < min[1]) {
+                min[1] = points[i][1];
+            }
+
+            if(points[i][0] > max[0]) {
+                max[0] = points[i][0];
+            }
+
+            if(points[i][1] > max[1]) {
+                max[1] = points[i][1];
+            }
+        }
+
+        return [min, max];
+    }
+}
+
+class V3SimpleWatchFaceDelegate extends Ui.WatchFaceDelegate {
+    // The onPowerBudgetExceeded callback is called by the system if the
+    // onPartialUpdate method exceeds the allowed power budget. If this occurs,
+    // the system will stop invoking onPartialUpdate each second, so we set the
+    // partialUpdatesAllowed flag here to let the rendering methods know they
+    // should not be rendering a second hand.
+    function onPowerBudgetExceeded(powerInfo) {
+        System.println( "Average execution time: " + powerInfo.executionTimeAverage );
+        System.println( "Allowed execution time: " + powerInfo.executionTimeLimit );
+        partialUpdatesAllowed = false;
+    }
+}
+
+
+
+
+class V3SimpleWatchFaceViewOld extends Ui.WatchFace {
+
+    hidden var radius;
+    
+    hidden var fgColor, bgColor, bdColor, hrColor, btColor, stColor, flColor, ihColor, imColor, isColor, hhColor;
+    
+    hidden var fullScreenRefresh;
+    hidden var centerPoint;
+    hidden var partialUpdatesAllowed;
+    hidden var offscreenBuffer, dateBuffer;
+    hidden var active;
+
+    function initialize() 
+    {
+        WatchFace.initialize();
+        
+        partialUpdatesAllowed = Ui.WatchFace has :onPartialUpdate;
 
         fgColor = Gfx.COLOR_WHITE;// App.getApp().getProperty("ForegroundColor");
         ihColor = Gfx.COLOR_YELLOW;
@@ -29,10 +408,111 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         flColor = Gfx.COLOR_PURPLE;
     }
 
-    function onLayout(dc) {
+    function onLayout(dc) 
+    {
+    	fullScreenRefresh = true;
+    	centerPoint = [dc.getWidth() / 2, dc.getHeight() / 2];
+    	
+    	offscreenBuffer = null;
+    	dateBuffer = null;
+    	
+    	if (Gfx has :BufferedBitmap) {
+    		offscreenBuffer = new Gfx.BufferedBitmap({
+                :width => dc.getWidth(),
+                :height => dc.getHeight(),
+                :palette => [
+                	bgColor,
+                	fgColor,
+                	ihColor,
+                	hhColor
+                ]
+            });
+            
+            dateBuffer = new Gfx.BufferedBitmap({
+                :width => dc.getWidth(),//dc.getTextWidthInPixels("99", Gfx.FONT_XTINY), // the date contains 2 digits
+                :height => Gfx.getFontHeight(Gfx.FONT_XTINY)
+            });
+    	}
     }
+    
+    hidden function getDc(dc)
+    {
+    	// If we have an offscreen buffer that we are using to draw the background,
+        // set the draw context of that buffer as our target.
+    	if (null != offscreenBuffer) {
+			dc.clearClip();
+			return offscreenBuffer.getDc(); 
+		} 
+		return dc;
+    }
+    
+    function onUpdate(dc) 
+    {
+    	var width, height;
+    
+    	fullScreenRefresh = true;
+    	
+    	dc = getDc(dc);
+    	    	
+    	width = dc.getWidth();
+        height = dc.getHeight();
+    	
+		// Fill the entire background with Black.
+		dc.setColor(Gfx.COLOR_TRANSPARENT, bgColor);
+        dc.clear();
+//        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+//        targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
 
-    function onPartialUpdate(dc) {
+        drawHourMarks(dc);
+        
+        drawMinutesHand(dc);
+        drawHourHand(dc);
+        drawCenter(dc);
+        
+        if( null != dateBuffer ) {
+            var dateDc = dateBuffer.getDc();
+
+            //Draw the background image buffer into the date buffer to set the background
+            dateDc.drawBitmap(0, -(height / 4), offscreenBuffer);
+
+            //Draw the date string into the buffer.
+            drawDate(dateDc);
+        }
+        
+        drawBackground(dc);
+        
+        if (partialUpdatesAllowed) {
+            // If this device supports partial updates and they are currently
+            // allowed run the onPartialUpdate method to draw the second hand.
+            onPartialUpdate(dc);
+        } else if (active) {
+            // Otherwise, if we are out of sleep mode, draw the second hand
+            // directly in the full update method.
+            drawSecondsHand(dc);
+        }
+
+        fullScreenRefresh = false;
+
+        
+    }
+    
+
+    function onPartialUpdate(dc) 
+    {
+    	if (!fullScreenRefresh) {
+            drawBackground(dc);
+        }
+        
+        var clockTime = System.getClockTime();
+        var secondHand = (clockTime.sec / 60.0) * Math.PI * 2;
+        var secondHandPoints = generateHandCoordinates(centerPoint, secondHand, 60, 20, 2);
+        
+        var curClip = getBoundingBox( secondHandPoints );
+        var bboxWidth = curClip[1][0] - curClip[0][0] + 1;
+        var bboxHeight = curClip[1][1] - curClip[0][1] + 1;
+        dc.setClip(curClip[0][0], curClip[0][1], bboxWidth, bboxHeight);
+        
+        drawSecondsHand(dc);
     }
 
     function onShow() {
@@ -50,135 +530,72 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
     function onExitSleep() {
         active = true;
     }
+    
+    // Compute a bounding box from the passed in points
+    hidden function getBoundingBox( points ) {
+        var min = [9999,9999];
+        var max = [0,0];
 
-    // Load your resources here
-    function onUpdate(dc) {
-        me.dc = dc;
-
-        drawBackground();
-        drawTime();
-    }
-
-    hidden function drawBackground() {
-        dc.setColor(Gfx.COLOR_TRANSPARENT, bgColor);
-        dc.clear();
-    }
-
-    hidden function drawTime() {
-
-        var time = Sys.getClockTime();
-        var hour = time.hour;
-        var min = time.min;
-
-        for (var i = 0; i < 60; i += 1) {
-
-            var radian = Math.toRadians(i * 6 + 270); // 270 = strange degrees offset of Garmin round display
-            var rx = Math.cos(radian);
-            var ry = Math.sin(radian);
-
-            // hour ticks, or all the minutes tick in the current 5 min interval
-            if ((i % 5 == 0) /*|| ((i > 5 * Math.floor(min / 5)) && (i < 5 + 5 * Math.floor(min / 5)))*/) {
-                dc.setPenWidth(2);
-                dc.setColor(i % 15 == 0 ? hhColor : fgColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + radius * rx, radius + radius * ry);
+        for (var i = 0; i < points.size(); ++i) {
+            if(points[i][0] < min[0]) {
+                min[0] = points[i][0];
             }
 
-            // hour ticks background, minutes ticks background
-            dc.setPenWidth(4);
-            /*if (i % 15 == 0) {
-                dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + (radius - 7) * rx, radius + (radius - 7) * ry);
-            } else*/ if (i % 5 == 0) {
-                dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + (radius - 15) * rx, radius + (radius - 15) * ry);
-            } else  if ((i >= 5 * Math.floor(min / 5)) && (i < 5 + 5 * Math.floor(min / 5))) {
-                dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + (radius - 5) * rx, radius + (radius - 5) * ry);
+            if(points[i][1] < min[1]) {
+                min[1] = points[i][1];
+            }
+
+            if(points[i][0] > max[0]) {
+                max[0] = points[i][0];
+            }
+
+            if(points[i][1] > max[1]) {
+                max[1] = points[i][1];
             }
         }
 
-        drawDate();
-        drawHeartRate();
-        drawSteps();
-        drawBattery();
-        drawFloors();
-
-        for (var i = 0; i < 360; i += 1) {
-
-            var radian = Math.toRadians(i + 270); // 270 = strange degrees offset of Garmin round display
-            var rx = Math.cos(radian);
-            var ry = Math.sin(radian);
-
-            // hour text - 12 3 6 9
-            /*if (i % 90 == 0) {
-                var text = "" + (i == 0 ? "12" : Math.ceil(i / 30));
-                var size = dc.getTextDimensions(text, Gfx.FONT_TINY);
-                dc.setColor(fgColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawText(
-                    radius * (i == 0 || i == 180 ? 1 : (i == 270 ? 0 : 2)) + (3 + size[0] / 2) * (i == 270 ? 1 : (i == 90 ? -1 : 0)),
-                    radius * (i == 90 || i == 270 ? 1 : (i == 0 ? 0 : 2)) + (3 + size[1] / 2) * (i == 0 ? 1 : (i == 180 ? -1 : 0)),
-                    Gfx.FONT_TINY,
-                    text,
-                    (i == 270 ? Gfx.TEXT_JUSTIFY_LEFT : (i == 15 ? Gfx.TEXT_JUSTIFY_RIGHT : Gfx.TEXT_JUSTIFY_CENTER)) | Gfx.TEXT_JUSTIFY_VCENTER
-                );
-            }*/
-
-            // minute indicator
-            if (i == min * 6) {
-                dc.setPenWidth(3);
-                dc.setColor(imColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + (radius - 17) * rx, radius + (radius - 17) * ry);
-            }
-
-            // hour indicator
-            if ((i == (hour % 12) * 30 + Math.floor(min / 2))) {
-                dc.setPenWidth(3);
-                dc.setColor(ihColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + radius * 3 / 5 * rx, radius + radius * 3 / 5 * ry);
-            }
-
-            // second indicator
-            if (active && (i == time.sec * 6)) {
-
-                // for the opposite tail of the second indicator
-                var oppradian = Math.toRadians(i + 270 + 180); // 270 = strange degrees offset of Garmin round display
-                var opprx = Math.cos(oppradian);
-                var oppry = Math.sin(oppradian);
-
-                dc.setPenWidth(1);
-                dc.setColor(isColor, Gfx.COLOR_TRANSPARENT);
-                dc.drawLine(radius, radius, radius + (radius - 15) * rx, radius + (radius - 15) * ry);
-                dc.drawLine(radius, radius, radius + 20 * opprx, radius + 20 * oppry);
-            }
-        }
-
-        // draw center circle
-        dc.setPenWidth(3);
-        dc.setColor(active ? isColor : fgColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawCircle(radius, radius, 6);
-        dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
-        dc.fillCircle(radius, radius, 4);
+        return [min, max];
     }
 
-    hidden function drawDate() {
-        if (active == true) {
-            return null;
-        }
-        var text = Greg.info(Time.now(), Time.FORMAT_SHORT).day.format("%d");
+    
+    hidden function drawBackground(dc) {
+    
+    	var width = dc.getWidth();
+        var height = dc.getHeight();
 
-        drawRectangle(text, bgColor, 3);
+        //If we have an offscreen buffer that has been written to
+        //draw it to the screen.
+        if( null != offscreenBuffer ) {
+            dc.drawBitmap(0, 0, offscreenBuffer);
+        }
+
+        // Draw the date
+        if( null != dateBuffer ) {
+            // If the date is saved in a Buffered Bitmap, just copy it from there.
+            dc.drawBitmap(0, (height / 4), dateBuffer );
+        } else {
+            // Otherwise, draw it from scratch.
+            drawDate(dc);
+        }
+    	
+    }
+
+    hidden function drawDate(dc) 
+    {
+    	var text = Greg.info(Time.now(), Time.FORMAT_SHORT).day.format("%d");
+        drawRectangle(dc, text, bgColor, [centerPoint[0] * 3/2, centerPoint[1]]);
     }
 
     hidden function drawHeartRate() {
         if (active != true) {
-            return null;
+            return ;
         }
         var hr = Act.getActivityInfo().currentHeartRate;
         if (hr == null || hr == Mon.INVALID_HR_SAMPLE) {
             hr = Mon.getHeartRateHistory(1, true).next().heartRate;
         }
         if (hr == null || hr == Mon.INVALID_HR_SAMPLE) {
-            return null;
+            return ;
         }
         var text = hr.format("%d");
 
@@ -187,7 +604,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
 
     hidden function drawSteps() {
         if (active != true) {
-            return null;
+            return ;
         }
         var steps = Mon.getInfo().steps;
         var text = ((steps == null) ? "0" : ((steps < 1000) ? steps.format("%d") : ((steps / 1000.0).format("%.1f")) + "k"));
@@ -197,7 +614,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
 
     hidden function drawBattery() {
         if (active != true) {
-            return null;
+            return ;
         }
         var text = Sys.getSystemStats().battery.format("%d");
 
@@ -206,21 +623,21 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
 
     hidden function drawFloors() {
         if (active != true) {
-            return null;
+            return ;
         }
         var text = Mon.getInfo().floorsClimbed.format("%d");
 
         drawRectangle(text, flColor, 3);
     }
 
-    hidden function drawRectangle(text, color, position) {
-
-        var size = dc.getTextDimensions("9999", Gfx.FONT_XTINY);
+    hidden function drawRectangle(dc, text, color, position) {
+    
+    	var size = dc.getTextDimensions("9999", Gfx.FONT_XTINY);
         var w = size[0] + 8;
         var h = size[1] + 4;
 
-        var tx = 0;
-        var ty = 0;
+        var tx = position[0];
+        var ty = position[1];
 
         if (position == 3) {
             tx = radius + radius / 2;
@@ -235,7 +652,7 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
             tx = radius;
             ty = radius / 2;
         } else {
-            return null;
+            return ;
         }
 
         var x = tx - w / 2;
@@ -251,6 +668,115 @@ class V3SimpleWatchFaceView extends Ui.WatchFace {
         dc.setColor(color, Gfx.COLOR_TRANSPARENT);
         dc.drawText(tx, ty, Gfx.FONT_XTINY, text, Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
 
+    }
+    
+    hidden function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) 
+    {
+        // Map out the coordinates of the watch hand
+        var coords = [[-(width / 2), tailLength], [-(width / 2), -handLength], [width / 2, -handLength], [width / 2, tailLength]];
+        var result = new [4];
+        var cos = Math.cos(angle);
+        var sin = Math.sin(angle);
+
+        // Transform the coordinates
+        for (var i = 0; i < 4; i += 1) {
+            var x = (coords[i][0] * cos) - (coords[i][1] * sin) + 0.5;
+            var y = (coords[i][0] * sin) + (coords[i][1] * cos) + 0.5;
+
+            result[i] = [centerPoint[0] + x, centerPoint[1] + y];
+        }
+
+        return result;
+    }
+    
+    hidden function drawHourMarks(dc) 
+    {
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        
+        var sX, sY;
+        var eX, eY;
+        var outerRad = width / 2;
+        var innerRad = outerRad - 10;
+            
+        // Loop through each 15 minute block and draw tick marks.
+        for (var i = 0; i < 12; i += 1) {
+            // Partially unrolled loop to draw two tickmarks in 15 minute block.
+            
+            var radians = Math.PI / 6 * i;
+            
+            sY = outerRad + innerRad * Math.sin(radians);
+            eY = outerRad + outerRad * Math.sin(radians);
+            sX = outerRad + innerRad * Math.cos(radians);
+            eX = outerRad + outerRad * Math.cos(radians);
+            
+            dc.setPenWidth(2);
+            dc.setColor(i % 3 == 0 ? hhColor : fgColor, Gfx.COLOR_TRANSPARENT);
+            dc.drawLine(sX, sY, eX, eY);
+        }
+    }
+    
+    hidden function drawHourHand(dc)
+    {
+    	var clockTime = Sys.getClockTime();
+    	var hourHandAngle = (((clockTime.hour % 12) * 60) + clockTime.min);
+        hourHandAngle = hourHandAngle / (12 * 60.0);
+        hourHandAngle = hourHandAngle * Math.PI * 2;
+
+		dc.setColor(ihColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(
+        	generateHandCoordinates(
+        		centerPoint, 
+        		hourHandAngle, 
+        		centerPoint[0] * 3 / 5, 
+        		0, 
+        		3
+        	)
+        );
+    }
+    
+    hidden function drawMinutesHand(dc)
+    {
+    	var clockTime = Sys.getClockTime();
+    	var minHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
+
+		dc.setColor(imColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(
+        	generateHandCoordinates(
+        		centerPoint, 
+        		minHandAngle, 
+        		centerPoint[0] - 17, 
+        		0, 
+        		2
+        	)
+        );
+    }
+    
+    hidden function drawSecondsHand(dc)
+    {
+    	var clockTime = Sys.getClockTime();
+    	var secHandAngle = (clockTime.sec / 60.0) * Math.PI * 2;
+    	
+    	dc.setColor(isColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillPolygon(
+        	generateHandCoordinates(
+        		centerPoint, 
+        		secHandAngle, 
+        		centerPoint[0] - 15, 
+        		20, 
+        		1
+        	)
+        );
+    }
+    
+    hidden function drawCenter(dc)
+    {
+    	// draw center circle
+        dc.setPenWidth(3);
+        dc.setColor(active ? isColor : fgColor, Gfx.COLOR_TRANSPARENT);
+        dc.drawCircle(centerPoint[0], centerPoint[1], 6);
+        dc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
+        dc.fillCircle(centerPoint[0], centerPoint[1], 4);
     }
 
 }
